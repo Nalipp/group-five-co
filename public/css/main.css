@@ -1,0 +1,335 @@
+ul,ol { list-style: none; }
+a img,:link img,:visited img, fieldset { border: none; }
+button, label { cursor: pointer; }
+html, body, h1, h2, h3, h4, div, p { margin: 0; padding: 0; }
+input:focus, textarea:focus, select:focus{ outline: none; }
+
+/* ******************************************************************************** */
+/* Full screen */
+/* ******************************************************************************** */
+
+body {
+  color: #F02FA3;
+  /* background: #393FD6; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+button {
+  position: relative;
+  background-color: #393FD6;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  box-shadow: 5px 5px #f02fa3;
+  height: 2em;
+}
+
+.outer-full {
+  width: 80vw;
+  margin: 10vh 10vw;
+  justify-content: space-between;
+}
+
+.outer-full-half {
+  width: 80vw;
+  height: 40vh;
+  margin: 10vh 10vw;
+  justify-content: space-between;
+  display: flex;
+}
+
+.inner-full {
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.inner-half-half {
+  width: 50%
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.btn-full {
+  min-width: 8em;; 
+}
+
+.btn-half {
+  min-width: 5em;; 
+}
+
+.logo-left {
+  height: 90%;
+}
+
+.logo-right {
+  height: 40%;
+}
+
+.tagline-left {
+  width: 50%;
+}
+
+.tagline-right {
+  width: 10em;
+  margin-bottom: 2em;
+}
+
+.index-mainsl {
+  text-align: center;
+}
+
+
+#section1Checkmark { visibility: hidden; }
+#section2Checkmark { visibility: hidden; }
+#section3Checkmark { visibility: hidden; }
+/* ------------------------------------------------------------ */
+/* full screen betaform */
+/* ------------------------------------------------------------ */
+
+
+.question-title {
+  text-align: center;
+}
+
+.question {
+  justify-content: center;
+  display: flex;
+  gap: 10%;
+}
+
+.subquestion1 {
+  width: 25%;
+  max-width: 14em;
+}
+
+.subquestion {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.box-input-label {
+  position: relative;
+  font-size: 1.5em;
+  top: 2.5em;
+}
+
+.box-input {
+  cursor: pointer;
+  height: 4em;
+  border: 3px solid #F02FA3;
+  margin: 7%;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #F02FA3;
+}
+
+
+.input {
+  height: 40px;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  border: 2px solid #F02FA3;
+  text-indent: 6px;
+}
+
+.custom-input {
+  height: 1.5em;
+  width: 25vmin;
+  border-radius: 4px;
+  border: none;
+  text-indent: 4px;
+  margin-top: 7%;
+  border: 1px solid #F02FA3;
+}
+
+.btn2 {
+  width: 150px;
+  height: 50px;
+  margin-top: 2em;
+  /* font-size: 1.5em; */
+  /* position: relative; */
+  /* top: 6px; */
+}
+
+.validation-message {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@media (min-width: 800px) {
+  .question1 {
+    display: flex;
+    text-align: center;
+  }
+}
+
+
+/* ------------------------------------------------------------ */
+/* full screen thankyou */
+/* ------------------------------------------------------------ */
+
+.clipboard-cta {
+  margin-top: 20%;
+  font-size: 20px;
+}
+
+.clipboard {
+  height: 25px;
+  width: 25px;
+  color: green;
+}
+
+#clipboard-input {
+  width: 185px;
+  border-radius: 4px;
+  border: none;
+  height: 28px;
+  font-size: 15px;
+  margin-top: 10px;
+  border: 2px solid #F02FA3;
+}
+
+#clipboard-btn {
+  padding-top: 5px;
+  height: 35px;
+  border-radius: 6px;
+  font-size: 0.7em;
+  width: 12vh;
+  box-shadow: 5px 5px #f02fa3;
+}
+
+
+
+
+/* ******************************************************************************** */
+/* Half screen */
+/* ******************************************************************************** */
+
+@media (max-width: 800px) {
+  .outer-full {
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+
+
+  .box-input-label {
+    position: relative;
+    top: 3.2em;
+  }
+  
+  .dynamic {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  } 
+
+  .logo-left {
+    height: 60%;
+  }
+
+  .logo-right {
+    height: 20%;
+  }
+
+  .tagline-left {
+    width: 100%;
+  }
+
+  .tagline-right {
+    display: inline-block;
+  }
+
+  .on-phone-shift-up {
+    position: relative;
+    top: -4em;
+  }
+
+  /* ------------------------------------------------------------ */
+  /* half screen betaform */
+  /* ------------------------------------------------------------ */
+
+  .question {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subquestion1, .subquestion {
+    width: 60%;
+  }
+
+  .validation-message {
+    font-size: 14px;
+  }
+
+  .custom-input {
+    width: 50vmin;
+  }
+
+  /* ------------------------------------------------------------ */
+  /* half screen thankyou */
+  /* ------------------------------------------------------------ */
+
+  .clipboard-cta {
+    margin-top: 50%;
+    font-size: 15px;
+  }
+
+  .input {
+    height: 30px;
+    width: 200px;
+  }
+
+  .btn2 {
+    width: 35vw;
+    height: 5vh;
+    /* position: relative; */
+    /* top: 0; */
+    font-size: 20px;
+  }
+
+  button {
+    box-shadow: 5px 5px #F02FA3;
+  }
+
+  input[type="checkbox"] {
+    border-radius: 2px;
+    accent-color: #F02FA3;
+  }
+}
